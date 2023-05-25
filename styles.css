@@ -1,0 +1,83 @@
+*{
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+
+body{
+	background-color: black;
+}
+
+.home{
+	bottom: 55px;
+	overflow: hidden;
+	position: fixed;
+	right: 5%;
+	z-index: 999;
+	width: 62px;
+	height: 85px; 
+	background-image: url('https://s1.hdslb.com/bfs/static/jinkela/space/assets/space-to-top.png');
+	background-position: center;
+	cursor: pointer;
+}
+
+.nav{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+	background-color: black;
+}
+
+.nav ul{
+	white-space:nowrap;
+	list-style: none;
+}
+
+.nav li{
+	display: inline;
+	margin-left: 20px;
+}
+
+.nav li a{
+	font-size: 20px;
+	text-decoration:none;
+}
+
+.nav li a:hover{
+	color: red;
+}
+
+.card{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin: 50px 0 50px 0;
+}
+
+.info{
+	text-align: center;
+	margin: auto 0 auto 0;
+}
+
+.image{
+	width: 570px;
+	margin-left: 60px;
+}
+
+.btn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: red;
+	width: 160px;
+	height: 40px;
+	border-radius: 5px;
+	margin-top: 20px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.btn:hover{
+	background-color: rgb(230, 0, 0);
+}
