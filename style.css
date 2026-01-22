@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserat', sans-serif;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #171d25;
+}
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  width: 90%; /* Adjusted width for better responsiveness */
+  border-radius: 25px;
+  padding: 30px;
+  border: 1px solid #333333;
+  box-shadow: 0 5px 20px #FFE75E;
+  background-color: #202020;
+}
+.image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+}
+.image .profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 2px 2px 12px #FFE75E;
+}
+.data-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  padding: 10px 5px;
+}
+.data-info h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+span {
+  font-size: 14px;
+  padding-top: 15px;
+  color: white;
+}
+.data-row {
+  display: flex;
+  flex-wrap: wrap; /* Adjusted for better responsiveness */
+  justify-content: center; /* Adjusted for better responsiveness */
+  margin-top: 20px;
+}
+.data-row .information {
+  text-align: center;
+  padding: 0 20px;
+  color: white;
+  font-size: smaller;
+  margin-bottom: 10px; /* Adjusted for better spacing */
+}
+.btns {
+  display: flex;
+  flex-direction: column; /* Adjusted for better responsiveness */
+  align-items: center; /* Adjusted for better responsiveness */
+  //margin-top: 30px;
+}
+.btns .btn {
+  color: #fff;
+  text-decoration: none;
+  margin: 10px; /* Adjusted for better spacing */
+  padding: 8px 25px;
+  border-radius: 25px;
+  font-size: 14px;
+  white-space: nowrap;
+  background: linear-gradient(to right, #33A1FB 0%, #6ABCFF 100%);
+  //border: 1px solid white;
+}
+.btns .btn:hover {
+  background: #FF4D36;
+}
+@media screen and (min-width: 600px) {
+  .profile-card {
+    width: 80%; /* Adjusted width for better responsiveness */
+  }
+
+  .data-row {
+    flex-wrap: nowrap; /* Adjusted for better responsiveness */
+  }
+
+  .btns {
+    flex-direction: row; /* Adjusted for better responsiveness */
+  }
+}
